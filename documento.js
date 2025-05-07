@@ -1,3 +1,22 @@
+/*
+assinar documento sem qrcode - metodo assinar somente
+assinar documento com qrcode - primeiro deve-se chamar o metodo
+inserir-qrcode passando os parametros
+{
+    "arquivo":"C:/Projetos/chaves-de-assinatura/meupdf.pdf",
+    "certificado":"C:/Projetos/chaves-de-assinatura/certificado.p12",
+    "senha_certificado":"minhaSenha",
+    "url":"www.google.com.br"
+}
+
+em seguida executar o metodo assinar passando os parametros
+{
+    "arquivo":"C:/Projetos/chaves-de-assinatura/meupdf.pdf",
+    "certificado":"C:/Projetos/chaves-de-assinatura/certificado.p12",
+    "senha_certificado":"minhaSenha"
+}
+*/
+
 const express = require("express");
 const fs = require('fs');
 const { plainAddPlaceholder } = require('node-signpdf/dist/helpers');
